@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheetindex.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="assets/logo.png">
+    <title>Le web pour les noobs</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="main-header">
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="java.html">JavaScript</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </header>
+        <div class="main-content">
+            <!-- les span servent a avoir plusieurs couleurs dans le même paragraphe, &gt; et &lt; sont des caractère spéciaux-->
+            <h2>Le HTML</h2>
+            <br>
+            <p>HTML (HyperText Markup Language) est le langage fondamental qui constitue le squelette structurel de
+                toute page web. En tant que langage de balisage, HTML permet de définir la structure logique et
+                hiérarchique des éléments d'une page, tels que les titres, les paragraphes, les images et les liens.
+                Chaque balise HTML englobe le contenu qu'elle représente, fournissant ainsi une organisation claire et
+                compréhensible pour les navigateurs web. En combinant des balises avec des attributs, HTML offre une
+                base solide pour la création de contenus web accessibles, sémantiques et interprétables aussi bien par
+                les utilisateurs que par les moteurs de recherche.</p>
+            <h3>Les balises</h3>
+            <p>Les balises sont des éléments fondamentaux d'HTML et sont utilisées pour définir et structurer le contenu
+                de la page web.</p>
+            <p>Une balise commence par <span id="balises">&lt;</span> et se termine par <span id="balises">&gt;</span>.
+                Par exemple, <span id="balises">&lt;p&gt; </span> est la balise pour un paragraphe.</p>
+            <h3>Les éléments</h3>
+            <p>Un élément HTML est constitué d'une balise ouverte, du contenu et d'une balise fermée. Par exemple :</p>
+            <p><span id="balises">&lt;p&gt;</span> Ceci est un paragraphe. <span id="balises">&lt;/p&gt;</span></p>
+            <h3>Les attributs</h3>
+            <p>Les balises peuvent avoir des attributs qui fournissent des informations supplémentaires sur l'élément.
+                Les attributs sont généralement spécifiés dans la balise ouverte. Par exemple :</p>
+            <p><span id="balises">&lt;a</span> <span id="attribus">href=</span> <span
+                    id="liens">https://exemple.fr</span> <span id="balises">&gt;</span>Lien vers exemple<span
+                    id="balises">&lt;/a&gt;</span></p>
+            <h3>structure de base</h3>
+            <p>Une page HTML typique commence par la balise <span id="balises">&lt;html&gt;</span> et se divise en deux
+                sections principales : <span id="balises">&lt;head&gt;</span> (contenant des métadonnées et des liens
+                vers des fichiers externes) et <span id="balises">&lt;body&gt;</span> (contenant le contenu réel de la
+                page).</p>
+            <img src="assets/html/1.png" alt="exemple1">
+            <br>
+            <a href="exemples/html/exemple1.html" target="_blank">cliquez ici pour essayer</a>
+            <br>
+            <h3>Le commentaire</h3>
+            <p>Le commentaire est inséré lors de l'écriture d'une page web pour donner des indications sur le code. Il
+                est complètement ignoré lors de l'exécution du code. Il s'écrit &lt;!-- Contenu du commentaire --&gt;
+            </p>
+            <h2>Le texte</h2>
+            <br>
+            <p>Nous allons voir ici ce que l'on peut faire sur un texte en html</p>
+            <h3><span id="balises">&lt;p&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;p&gt;</span> est la balise permettant de faire un paragraphe. exemple:
+            </p>
+            <p><span id="balises">&lt;p&gt;</span>Ceci est un paragraphe<span id="balises">&lt;/p&gt;</span></p>
+            <h3><span id="balises">&lt;h1&gt;</span> à <span id="balises">&lt;h6&gt;</span></h3>
+            <p>Les titres sont définis avec les balises <span id="balises">&lt;h1&gt;</span> à <span
+                    id="balises">&lt;h6&gt;</span>, <span id="balises">&lt;h1&gt;</span> étant le plus grand.</p>
+            <a href="exemples/html/exemple2.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="balises">&lt;strong&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;strong&gt;</span> permet de mettre du texte en gras. exemple:</p>
+            <p><span id="balises">&lt;strong&gt;</span>Ce texte est en gras<span id="balises">&lt;/strong&gt;</span></p>
+            <p>Une autre possiblité est de mettre que une partie d'un paragraphe en gras. exemple:</p>
+            <p><span id="balises">&lt;p&gt;</span>Ces frites sont vraiment<span
+                    id="balises">&lt;strong&gt;</span>grasses<span id="balises">&lt;/strong&gt;</span>comparé à celle de
+                papa.<span id="balises">&lt;/p&gt;</span></p>
+            <a href="exemples/html/exemple3.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="balises">&lt;em&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;em&gt;</span> permet de la même manière que <span
+                    id="balises">&lt;strong&gt;</span> de mettre du text en italique</p>
+            <a href="exemples/html/exemple4.html" target="_blank">cliquez ici pour essayer</a>
+            <h3>caractères spéciaux</h3>
+            <p>Pour insérer des caractères spéciaux on écrit & suivit d'un nom ou d'un numéro de référence, puis on
+                termine par ";". exemple:</p>
+            <p><span id="balises">&lt;p&gt;</span>Le prix est de 10 &euro ;<span id="balises">&lt;/p&gt;</span> <span
+                    id="commentaire"> Retirez l'espace entre le o et le point virgule</span></p>
+            <a href="exemples/html/exemple5.html" target="_blank">cliquez ici pour essayer</a>
+            <h3>Saut de ligne</h3>
+            <p>Un saut de ligne s'effectue avec la balise <span id="balises">&lt;br&gt;</span> entre deux éléments. La
+                particularité de cette balise et qu'elle de se ferme pas. exemple:</p>
+            <p><span id="balises">&lt;p&gt;</span>Texte 1<span id="balises">&lt;/p&gt;</span></p>
+            <p><span id="balises">&lt;br&gt;</span></p>
+            <p><span id="balises">&lt;p&gt;</span>Texte 2<span id="balises">&lt;/p&gt;</span></p>
+            <a href="exemples/html/exemple6.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Les images</h2>
+            <br>
+            <p>Nous allons voir comment insérer une image sur une page web</p>
+            <h3><span id="balises">&lt;img&gt;</span></h3>
+            <p>Pour insérer une image on utilise la balise <span id="balises">&lt;img&gt;</span> mais il faut ajouter
+                dans la balise ouvrante un attribu <span id="attribus">src=</span> suivit du lien entre guillemets.
+                Cette balise ne se ferme pas aussi. exemple:</p>
+            <p><span id="balises">&lt;img</span> <span id="attribus">src=</span><span
+                    id="liens">"imagedechat.jpg"</span><span id="balises">&gt;</span></p>
+            <a href="exemples/html/exemple7.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="attribus">alt</span></h3>
+            <p>L'attribu <span id="attribus">alt</span> ce place après le <span id="attribus">src</span> au cas ou
+                l'image ne chargerait pas pour x ou y raison. exemple:</p>
+            <p><span id="balises">&lt;img</span> <span id="attribus">src=</span><span
+                    id="liens">"imagedechat.jpg"</span> <span id="attribus">alt=</span><span
+                    id="liens">"imagedechat"</span><span id="balises">&gt;</span></p>
+            <a href="exemples/html/exemple8.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Les liens</h2>
+            <br>
+            <p>Un lien nous emmène sur une autre page web que se soit sur internet ou sur un autre fichier html du même
+                site</p>
+            <h3><span id="balises">&lt;a&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;a&gt;</span> suivi de l'attribu <span id="attribus">href=</span>suivi
+                lui même du lien nous permet de crée un lien. exemple:</p>
+            <p><span id="balises">&lt;a</span> <span id="attribus">href=</span><span
+                    id="liens">"https://youtube.fr"</span><span id="balises">&gt;</span>Cliquer ici pour aller sur
+                YouTube<span id="balises">&lt;/a&gt;</span></p>
+            <a href="exemples/html/exemple9.html" target="_blank">cliquez ici pour essayer</a>
+            <h3>Les liens image</h3>
+            <p>On peut aussi créer une image qui lorsque l'on clique dessus, nous emmène à la page web désiré. exemple:
+            </p>
+            <p><span id="balises">&lt;a</span> <span id="attribus">href=</span><span
+                    id="liens">"https://youtube.fr"</span><span id="balises">&gt;</span><span
+                    id="balises">&lt;img</span> <span id="attribus">src=</span><span
+                    id="liens">"imagedeyoutube.jpg"</span> <span id="attribus">alt=</span><span id="liens">"image de
+                    youtube"</span><span id="balises">&gt;</span><span id="balises">&lt;/a&gt;</span></p>
+            <a href="exemples/html/exemple10.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Les listes</h2>
+            <br>
+            <p>Nous allons voir comment insérer une liste dans une page web</p>
+            <h3><span id="balises">&lt;ul&gt;</span> et <span id="balises">&lt;li&gt;</span></h3>
+            <p>Une liste s'écrit de la manière suivante avec <span id="balises">&lt;ul&gt;</span> définisant la liste et
+                <span id="balises">&lt;li&gt;</span> définisant les éléments. exemple</p>
+            <img src="assets/html/2.png" alt="exemple11">
+            <br>
+            <a href="exemples/html/exemple11.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Les formulaires</h2>
+            <p>Un formulaire HTML permet aux utilisateurs de saisir des données qui seront envoyées au serveur pour être
+                traitées.</p>
+            <h3><span id="balises">&lt;form&gt;</span></h3>
+            <p> La balise <span id="balises">&lt;form&gt;</span> définit le début et la fin du formulaire. L'attribut
+                action spécifie l'URL vers laquelle les données du formulaire seront envoyées, et l'attribut method
+                spécifie la méthode HTTP à utiliser (généralement "post" ou "get").</p>
+            <h3><span id="balises">&lt;label&gt;</span></h3>
+            <p> La balise <span id="balises">&lt;label&gt;</span> est utilisée pour associer une étiquette à un champ de
+                formulaire. L'attribut for de la balise <span id="balises">&lt;label&gt;</span> doit correspondre à la
+                valeur de l'attribut id du champ de formulaire associé.</p>
+            <h3><span id="balises">&lt;input&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;input&gt;</span> est utilisée pour créer différents types de champs de
+                formulaire, tels que des champs de texte, des cases à cocher, des boutons radio, etc. L'attribut <span
+                    id="attribus">type</span> spécifie le type de champ, et l'attribut <span id="attribus">name</span>
+                est utilisé pour identifier le champ lors de l'envoi du formulaire.</p>
+            <h3><span id="balises">&lt;textarea&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;textarea&gt;</span> est utilisée pour créer une zone de texte
+                multiligne. L'attribut <span id="attribus">rows</span> spécifie le nombre de lignes visibles dans la
+                zone de texte.</p>
+            <h3><span id="balises">&lt;button&gt;</span></h3>
+            <p>La balise <span id="balises">&lt;button&gt;</span> crée un bouton de soumission du formulaire. Lorsqu'il
+                est cliqué, le formulaire sera envoyé vers l'URL spécifié dans l'attribut <span
+                    id="attribus">action</span>.</p>
+            <h3><span id="attribus">required</span></h3>
+            <p>l'arttribu <span id="attribus">required</span> rend le champ selectioné obligatoire.</p>
+            <img src="assets/html/3.png" alt="exemple12">
+            <br>
+            <a href="exemples/html/exemple12.html" target="_blank">cliquez ici pour essayer</a>
+        </div>
+        <footer class="main-footer">
+            <p>Développer par: Timothée séguéla <a href="mailto:tseguela@laposte.net" target="_top">Envoyer un mail au
+                    développeur</a></p>
+        </footer>
+    </main>
+</body>
+
+</html>
