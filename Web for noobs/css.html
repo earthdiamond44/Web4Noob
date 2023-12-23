@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheetcss.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="assets/logo.png">
+    <title>Le web pour les noobs</title>
+</head>
+<body>
+    <main class="main-container">
+        <header class="main-header">
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="java.html">JavaScript</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </header>
+        <div class="main-content">  <!-- les span servent a avoir plusieurs couleurs dans le même paragraphe-->
+            <h2>Le CSS</h2>
+            <br>
+            <p>CSS (Cascading Style Sheets) est le langage qui donne vie à la présentation visuelle des pages web, en permettant de définir l'apparence et la mise en forme des éléments HTML. En utilisant des règles de style, CSS offre un contrôle précis sur la disposition, la couleur, la police et d'autres aspects visuels d'une page. Son approche de style "cascading" permet une gestion efficace des styles, avec la possibilité de définir des styles par défaut, tout en permettant des adaptations spécifiques à des éléments particuliers. En combinant HTML et CSS, les développeurs peuvent créer des sites web attrayants, bien structurés et faciles à naviguer, offrant ainsi une expérience utilisateur optimale. Une ligne de code ce termine toujours par ";".</p>
+            <h3>Intégrer du css au html</h3>
+            <p>Il existe deux manière d'intégrer du css a une page web; directement sur le fichier html et sur un fichier externe. La métode la plus utilisée est d'intéger le css grace a un fichier css externe car cela facilite la lisibilité du document. Pour intéger du css grace a un fichier externe, il faut mettre dans le <span id="balises">&lt;head&gt;</span> ceci :</p>
+            <p><span id="balises">&lt;link</span> <span id="attribus">rel=</span><span id="liens">"stylesheet"</span> <span id="attribus">type=</span><span id="liens">"text/css"</span> <span id="attribus">href=</span><span id="liens">"stylesheet.css"</span><span id="balises">&gt;</span></p>
+            <p><span id="commentaire">note: il faut que le fichier html et le fichier css soit dans le même dossier. Dans ce cas, le fichier s'appelle stylesheet.css</span></p>
+            <h3>Le commentaire</h3>
+            <p>Pour intégrer un commentaire en css on utilise "/* */"" qui est utilisée pour étaler un commentaire sur une ou plusieurs lignes.</p>
+            <h3><span id="selecteurs">Les sélecteurs</span></h3>
+            <p>Les sélecteurs CSS sont utilisés pour cibler des éléments HTML spécifiques. Par exemple, le sélecteur de type cible tous les éléments d'un certain type (par exemple, p pour les paragraphes), et le sélecteur de classe cible les éléments avec une classe spécifique (par exemple, .maClasse).</p>
+            <img src="assets/css/1.png" alt="exemple1">
+            <br>
+            <a href="exemples/css/exemple1.html" target="_blank">cliquez ici pour essayer</a>
+            <p><span id="commentaire">note : pour que le selecteur affecte tout les éléments, il faut utiliser le selecteur <span id="selecteurs">body</span></span></p>
+            <h3>Propriétés et valeurs</h3>
+            <p>Les règles CSS consistent en des propriétés et des valeurs. La propriété spécifie l'aspect à styliser, et la valeur définit comment elle doit être stylisée.</p>
+            <p>Dans l'exemple précedant, <span id="propriété">color</span> est la propriété et <span id="valeur">blue</span> est la valeur.</p>
+            <h2>Le texte</h2>
+            <p>Nous allons voir ce que l'on peur faire pour transformer un paragraphe (<span id="balises">&lt;p&gt;</span>)</p>
+            <h3><span id="propriété">color</span></h3>
+            <p>La propriété <span id="propriété">color</span> nous permet de changer la couleur du texte. exemple :</p>
+            <img src="assets/css/2.png" alt="exemple2">
+            <p>On peut aussi utiliser un HEX code (#c5c8c6), un code rgba (rgba(125,50,20,0.80)) qui est comme un code rgb mais le dernier chiffre représente l'oppacité de la couleur</p>
+            <a href="exemples/css/exemple2.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">font-size</span></h3>
+            <p><span id="propriété">font-size</span> définit la taille de la police. Il y a plusieurs unitée mais ici on utilise px (pixels)</p>
+            <img src="assets/css/3.png" alt="exemple3">
+            <br>
+            <a href="exemples/css/exemple3.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">font-family</span></h3>
+            <p><span id="propriété">font-family</span> définit la police d'écriture. exemple :</p>
+            <img src="assets/css/4.png" alt="exemple4">
+            <br>
+            <a href="exemples/css/exemple4.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">text-decoration</span></h3>
+            <p><span id="propriété">text-decoration</span> permet de décorer le texte avec des lignes, des traits etc... exemple:</p>
+            <img src="assets/css/5.png" alt="exemple5">
+            <br>
+            <a href="exemples/css/exemple5.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">text-align</span></h3>
+            <p><span id="propriété">text-align</span> permet de positioner le text au centre (<span id="valeur">center</span>) à gauche (<span id="valeur">left</span>) etc... exemple :</p>
+            <img src="assets/css/6.png" alt="exemple6">
+            <br>
+            <a href="exemples/css/exemple6.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Le fond d'écran</h2>
+            <p>Nous allons voir comment mettre un fond d'écran.</p>
+            <h3>Sur quel sélecteurs ?</h3>
+            <p>Le fond d'écran ne s'applique que sur le sélecteur désigné. exemple :</p>
+            <img src="assets/css/7.png" alt="exemple7">
+            <br>
+            <p><span id="commentaire">note : Pour que le fond d'écran s'applique pour toute la page web, il faut mettre dans le selecteur <span id="selecteurs">body</span>.</span></p>
+            <a href="exemples/css/exemple7.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">background-color</span></h3>
+            <p><span id="propriété">background-color</span> suivit de la couleur désirée, soit en hex code ou en code rgb, rgba ou même juste le nom de la couleur (parmis celles suportées), nous permet de changer la couleur du fond. exemple :</p>
+            <img src="assets/css/8.png" alt="exemple8">
+            <br>
+            <a href="exemples/css/exemple8.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">background-image</span></h3>
+            <p>On peut aussi mettre une image comme fond d'écran. exemple :</p>
+            <img src="assets/css/9.png" alt="exemple9">
+            <br>
+            <a href="exemples/css/exemple9.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="propriété">background-size</span></h3>
+            <p>Dans l'exemple précedant, parce que l'image étais trop petite, elle c'est répéter comme une sorte de grille. Pour empécher cela, on utilse <span id="propriété">background-size</span> et <span id="valeur">cover</span>. exemple :</p>
+            <img src="assets/css/10.png" alt="exemple10">
+            <br>
+            <a href="exemples/css/exemple10.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Les box</h2>
+            <p>Le modèle de boîte CSS décrit comment les éléments HTML sont rendus dans le navigateur, en les considérant comme des boîtes rectangulaires comprenant le contenu (content), la marge (margin), la bordure (border) et le rembourrage (padding). exemple:</p>
+            <h3>Contenu (content)</h3>
+            <p>Le contenu d'un élément est la partie interne de la boîte, qui contient le texte, les images, les liens ou tout autre élément que l'élément HTML représente.</p>
+            <h3>Le rembourage (padding)</h3>
+            <p>Le rembourrage est l'espace entre le contenu et la bordure de l'élément. Il détermine la distance entre le contenu de l'élément et sa bordure. Le rembourrage peut être ajusté à l'aide des propriétés CSS telles que, <span id="propriété">padding-right, padding-bottom et padding-left.</span></p>
+            <h3>La bordure (border)</h3>
+            <p>La bordure est la ligne qui entoure le rembourrage et le contenu d'un élément. Elle peut avoir une largeur, un style (comme solide, pointillé, etc.) et une couleur définis. La propriété border permet de définir la largeur, le style et la couleur de la bordure simultanément, ou vous pouvez utiliser des propriétés spécifiques telles que border-width, border-style et border-color.</p>
+            <h3>La marge (margin)</h3>
+            <p>La marge est l'espace situé à l'extérieur de la bordure de l'élément, qui définit la distance entre la bordure de l'élément et les éléments adjacents. Elle peut être ajustée avec les propriétés CSS telles que <span id="propriété">margin-top, margin-right, margin-bottom et margin-left.</span> exemple :</p>
+            <img src="assets/css/11.png" alt="exemple12"> <img src="assets/css/12.png" alt="exemple12" width="auto" height="200px">
+            <p><span id="commentaire">Les couleurs présente ici sont la pour représenter le padding, la border et le margin. Pour voir ces couleurs sur sa page web, il faut faire clique droit sur l"élément puis aller dans "inspecter" puis dans "style".</span></p>
+            <br>
+            <a href="exemples/css/exemple11.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Le positionnement</h2>
+            <p>En CSS, la propriété <span id="propriété">position</span> est utilisée pour définir la méthode de positionnement d'un élément dans une mise en page. Les valeurs possibles pour la propriété <span id="propriété">position</span> sont les suivantes :</p>
+            <p><span id="commentaire">Le texte "autre élément" est placé juste avant l'image dans chaque exemple présent ici.</span></p>
+            <h3><span id="valeur">static</span></h3>
+            <p>C'est la valeur par défaut. Les éléments sont positionnés en fonction de l'ordre normal du document. Les propriétés <span id="propriété">top, right, bottom, et left</span> n'ont aucun effet lorsque position est <span id="propriété">static.</span> exemple :</p>
+            <img src="assets/css/13.png" alt="exemple13">
+            <br>
+            <h3><span id="valeur">relative</span></h3>
+            <p>L'élément est positionné relativement à sa position normale dans le flux du document. Cela signifie que vous pouvez déplacer l'élément à partir de sa position normale en utilisant les propriétés <span id="propriété">top, right, bottom, et left.</span>exemple :</p>
+            <img src="assets/css/14.png" alt="exemple13">
+            <br>
+            <a href="exemples/css/exemple12.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="valeur">absolute</span></h3>
+            <p>L'élément est retiré du flux du document et est positionné par rapport à son conteneur le plus proche avec une position relative ou absolue. Si aucun conteneur n'a une position relative ou absolue, il sera positionné par rapport au &lt;html&gt;. Les propriétés <span id="propriété">top, right, bottom, et left</span> sont utilisées pour définir la position.</p>
+            <img src="assets/css/15.png" alt="exemple13">
+            <br>
+            <a href="exemples/css/exemple13.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="valeur">fixed</span></h3>
+            <p>L'élément est retiré du flux du document et reste fixe par rapport à la fenêtre du navigateur, même lorsque la page est défilée. Les propriétés <span id="propriété">top, right, bottom, et left</span> sont utilisées pour définir la position. exemple :</p>
+            <img src="assets/css/16.png" alt="exemple13">
+            <br>
+            <a href="exemples/css/exemple14.html" target="_blank">cliquez ici pour essayer</a>
+            <h3><span id="valeur">sticky</span></h3>
+            <p>L'élément est traité comme position <span id="valeur">relative</span> jusqu'à ce qu'il atteigne un certain point pendant le défilement, après quoi il est traité comme <span id="valeur">fixed</span>. C'est une combinaison de <span id="valeur">relative</span> et <span id="valeur">fixed</span>. exemple :</p>
+            <img src="assets/css/17.png" alt="exemple13">
+            <br>
+            <a href="exemples/css/exemple15.html" target="_blank">cliquez ici pour essayer</a>
+            <h2>Les flexbox</h2>
+            <p>Les flexbox servent à répartir des éléments d'une liste (<span id="balises">&lt;ul&gt;</span>) équitablement dans un élément</p>
+            <h3>Conteneur Flex</h3>
+            <p>Un conteneur flex est créé en appliquant la propriété CSS <span id="propriété">display </span><span id="valeur">flex;</span></p>
+            <h3>Axe Principal et Axe Secondaire</h3>
+            <p>Dans un conteneur flex, il y a deux axes : l'axe principal et l'axe secondaire. L'axe principal est déterminé par ladirection du conteneur flex, qui peut être horizontale (<span id="valeur">row ou row-reverse</span>) ou verticale (<span id="valeur">column ou column-reverse</span>). L'axe secondaire est perpendiculaire à l'axe principal. exemple :</p>
+            <img src="assets/css/18.png" alt="exemple14">
+            <br>
+            <p><span id="commentaire">list-style: none; sert à enlever la boule devant unélement</span></p>
+            <a href="exemples/css/exemple16.html" target="_blank">cliquez ici pour essayer</a>
+            <h3>Alignement</h3>
+            <p>La Flexbox offre des propriétés pour aligner les éléments flexibles le long de l'axe principal ( <span id="propriété">justify-content</span>) et del'axe secondaire ( <span id="propriété">align-items</span> pour l'alignement vertical et <span id="propriété">align-self</span> pour l'alignement individuel des éléments).</p>
+            <img src="assets/css/19.png" alt="exemple15">
+            <br>
+            <p><span id="commentaire">list-style: none; sert à enlever la boule devant unélement</span></p>
+            <a href="exemples/css/exemple17.html" target="_blank">cliquez ici pour essayer</a>
+        </div>
+        <footer class="main-footer">
+            <p>Développer par: Timothée séguéla <a href="mailto:tseguela@laposte.net" target="_top">Envoyer un mail au développeur</a></p>
+        </footer>
+    </main>
+</body>
+</html>

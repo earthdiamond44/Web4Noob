@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Monolisa';
+    src: url('assets/Monolisa.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #242422;
+    font-family: 'Monolisa';
+    font-size: 14px;
+    color: #c5c8c6;
+}
+
+.main-header{
+    position:-webkit-sticky; position:sticky; top: 0px;
+    background-color: #242422;
+    min-height: 50px;
+    padding-top: 10px;
+}
+
+.main-header a {
+    color: #9aa83a;
+}
+
+.main-header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: left;
+    padding: 0;
+}
+
+.main-header li {
+    margin: 15px;
+    margin-top: 0px;
+    padding: 15px;
+    outline: 2px dashed #9aa83a; 
+    outline-offset: 4px;
+    margin-top: 10px;
+}
+
+.main-content h2 {
+    color: #ffdb4d;
+}
+
+.main-content h3 {
+    color: #ffdb4d;
+}
+
+.main-content a {
+    color: #7380ff;
+}
+
+.main-content p {
+    color: #c5c8c6;
+}
+
+.main-footer{
+    outline: 2px dashed #585854;
+}
+
+.main-footer{
+    color: #585854;
+}
+
+.main-footer a {
+    color: #7380ff;
+}
+
+#balises {
+    color: #285ba6;
+}
+
+#attribus {
+    color: #ffdb4d;
+}
+
+#liens{
+    color: #9aa83a;
+    text-decoration: underline;
+}
+
+#commentaire{
+    color: #585854;
+}
