@@ -1,0 +1,8 @@
+img {
+    position: sticky;
+    top: 50px;
+}
+
+body {
+    min-height: 5000px;
+}
